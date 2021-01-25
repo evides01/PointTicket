@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">PointTickets</string>
+    <string name="config_title">Setup Connection</string>
+    <string name="server_ip">Server IP : </string>
+    <string name="username">Username : </string>
+    <string name="password">Password : </string>
+    <string name="database">Database : </string>
+    <string name="connect">Connect</string>
+    <string name="save">Save</string>
+    <string name="ticket_check">Ticket Checking</string>
+    <string name="ticket_detail">Ticket Detail</string>
+    <string name="scan_qr">Scan Ticket</string>
+    <string name="pls_scan_qr">Please Scan Ticket</string>
+    <string name="qr">QR : </string>
+    <string name="program">Program : </string>
+    <string name="station">Stations : </string>
+    <string name="type">Type : </string>
+    <string name="amount">Amount : </string>
+    <string name="press_back">Press BACK again to exit!</string>
+    <string name="scanner_disable_alert">Your scanner is disabled. Do you want to enable it?</string>
+    <string name="conn_err1">Check Your Internet Access!!</string>
+    <string name="conn_success">Connect Successfully!!</string>
+    <string name="connected">Connected!!</string>
+    <string name="save_success">Save Success!!</string>
+    <string name="pls_check_conn">Please Check Connection</string>
+</resources>

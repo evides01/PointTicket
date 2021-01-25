@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Title-->
+        <TextView
+            android:layout_marginTop="@dimen/head_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ticket_check"
+            android:textSize="@dimen/h4" />
+
+        <!--Button-->
+        <Button
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/btn_fsq_scan_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/scan_qr"
+            android:textSize="@dimen/caption" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linSplash"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--ImageView-->
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/micro_padding"
+            android:layout_margin="@dimen/margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linDetail"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/qr"
+                android:textSize="@dimen/h6"
+                android:layout_width="@dimen/left_block"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtQRResult"
+                android:textSize="@dimen/h6"
+                android:text="@string/pls_scan_qr"
+                android:layout_width="@dimen/right_block"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/program"
+                android:textSize="@dimen/h6"
+                android:layout_width="@dimen/left_block"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtProgramResult"
+                android:text="@string/pls_scan_qr"
+                android:textSize="@dimen/h6"
+                android:layout_width="@dimen/right_block"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/station"
+                android:textSize="@dimen/h6"
+                android:gravity="end"
+                android:layout_width="@dimen/left_block"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtStationResult"
+                android:text="@string/pls_scan_qr"
+                android:textSize="@dimen/h6"
+                android:layout_width="@dimen/right_block"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/type"
+                android:textSize="@dimen/h6"
+                android:gravity="end"
+                android:layout_width="@dimen/left_block"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtTypeResult"
+                android:text="@string/pls_scan_qr"
+                android:textSize="@dimen/h6"
+                android:layout_width="@dimen/right_block"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/amount"
+                android:textSize="@dimen/h6"
+                android:gravity="end"
+                android:layout_width="@dimen/left_block"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtAmtResult"
+                android:textSize="@dimen/h6"
+                android:text="@string/pls_scan_qr"
+                android:layout_width="@dimen/right_block"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

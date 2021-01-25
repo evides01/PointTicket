@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <!--Title-->
+        <TextView
+            android:layout_marginTop="@dimen/head_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_title"
+            android:textSize="@dimen/h4" />
+
+        <!--Content Group-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/edt_width_2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/server_ip"
+                    android:textSize="@dimen/body1" />
+
+                <EditText
+                    android:id="@+id/edtIP"
+                    android:layout_width="@dimen/edt_width"
+                    android:layout_height="wrap_content"
+                    android:hint="IP Address"
+                    android:inputType="text"
+                    android:textSize="@dimen/body2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/edt_width_2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textSize="@dimen/body1" />
+
+                <EditText
+                    android:id="@+id/edtUsername"
+                    android:layout_width="@dimen/edt_width"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textSize="@dimen/body2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/edt_width_2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textSize="@dimen/body1" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="@dimen/edt_width"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/body2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/edt_width_2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/database"
+                    android:textSize="@dimen/body1" />
+
+                <EditText
+                    android:id="@+id/edtDBName"
+                    android:layout_width="@dimen/edt_width"
+                    android:layout_height="wrap_content"
+                    android:hint="Database"
+                    android:inputType="text"
+                    android:textSize="@dimen/body2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Button Group-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_test_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mini_margin"
+                android:text="@string/connect"
+                android:textSize="@dimen/caption" />
+
+            <Button
+                android:id="@+id/btn_save_conf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mini_margin"
+                android:text="@string/save"
+                android:textSize="@dimen/caption" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

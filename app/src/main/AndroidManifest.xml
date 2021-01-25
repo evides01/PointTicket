@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="th.com.sahatara.s.pointtickets">
+
+
+    <permission
+        android:name="th.com.sahatara.s.pointtickets.permission.SCANNER_RESULT_RECEIVER"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="th.com.sahatara.s.pointtickets.permission.SCANNER_RESULT_RECEIVER" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConfigurationActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="th.com.sahatara.s.pointtickets.MainActivity$ScanResultReceiver"
+            android:enabled="true"
+            android:permission="th.com.sahatara.s.pointtickets.permission.SCANNER_RESULT_RECEIVER"
+            android:priority="0" >
+            <intent-filter>
+                <action android:name="device.common.USERMSG" />
+                <action android:name="device.scanner.EVENT" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library android:name="device.sdk" android:required="true" />
+    </application>
+
+
+
+</manifest>
